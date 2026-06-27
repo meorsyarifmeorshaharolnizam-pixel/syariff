@@ -1,0 +1,29 @@
+body { font-family: sans-serif; margin: 0; }
+
+/* Header fixed at the top */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+}
+
+#header-img { width: 100px; }
+
+/* Flexbox for navigation */
+#nav-bar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+main { margin-top: 100px; }
+
+/* Media query for mobile */
+@media (max-width: 600px) {
+  #header { flex-direction: column; }
+  #nav-bar { margin-top: 10px; }
+}
